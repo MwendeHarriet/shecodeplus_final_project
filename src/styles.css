@@ -105,7 +105,14 @@ footer {
 
 .weather-forecast {
     display: flex;
-    justify-content: space-around;
-    margin-top: 30px;
+    justify-content: space-between; 
+    margin-top: 10px;
 }
+
+.weather-forecast-temperatures {
+    display: flex;
+    justify-content: space-between; 
+}
+
+
 
