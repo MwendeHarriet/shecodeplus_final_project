@@ -2,11 +2,11 @@ body {
   background: #f9f7fe;
   font-family: "Roboto", sans-serif;
   background-image: url("https://i.pinimg.com/564x/6e/32/63/6e32639b01bb691670c11be59efc0879.jpg");
-  background-size: cover; 
-  background-repeat: no-repeat; 
-  background-position: center center; 
-  background-attachment: fixed; 
-  opacity: 1; 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  opacity: 1;
 }
 
 a {

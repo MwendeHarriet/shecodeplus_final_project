@@ -57,7 +57,7 @@ let currentDate = new Date();
 
 currentDateELement.innerHTML = formatDate(currentDate);
 
-function getForecast(city){
+function getForecast(city) {
   let apiKey = "129043486f7b8dc98b4d40otf0db40fa";
   let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}`;
   axios(apiUrl).then(displayForecast);
