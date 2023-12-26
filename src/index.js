@@ -13,6 +13,8 @@ function displayTemperature(response) {
   humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
   windspeedElement.innerHTML = `${response.data.wind.speed}km/h`;
   apiiconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="current-temperature-icon"/>`;
+
+  getForecast(response.data.city);
 }
 
 function search(event) {
@@ -61,7 +63,13 @@ let currentDate = new Date();
 
 currentDateELement.innerHTML = formatDate(currentDate);
 
-function displayForecast() {
+function getForecast(city){
+  let apiKey = "129043486f7b8dc98b4d40otf0db40fa";
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
+  axios(apiUrl).then(displayForecast);
+}
+
+function displayForecast(response) {
   let days = ["Sun", "Mon","Tue", "Wed", "Thu", "Fri", "Sat"];
   let forecastHtml = "";
 
@@ -86,4 +94,3 @@ function displayForecast() {
   forecastElement.innerHTML = forecastHtml;
 }
 
-displayForecast();
