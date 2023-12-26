@@ -1,6 +1,12 @@
 body {
   background: #f9f7fe;
   font-family: "Roboto", sans-serif;
+  background-image: url("https://i.pinimg.com/564x/6e/32/63/6e32639b01bb691670c11be59efc0879.jpg");
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: center center; 
+  background-attachment: fixed; 
+  opacity: 1; 
 }
 
 a {
@@ -104,22 +110,19 @@ footer {
 }
 
 .weather-forecast {
-    display: flex;
-    justify-content: space-between; 
-    margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
 }
 
 .weather-forecast-temperatures {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 .weather-forecast-icon {
-    width: 88px;
-    height: 88px;
-    display: block;
-    margin: 0 auto;
+  width: 88px;
+  height: 88px;
+  display: block;
+  margin: 0 auto;
 }
-
-
-
