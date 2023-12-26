@@ -111,7 +111,14 @@ footer {
 
 .weather-forecast-temperatures {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-around;
+}
+
+.weather-forecast-icon {
+    width: 88px;
+    height: 88px;
+    display: block;
+    margin: 0 auto;
 }
 
 
